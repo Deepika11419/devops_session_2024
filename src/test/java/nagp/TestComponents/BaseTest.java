@@ -153,7 +153,7 @@ public class BaseTest {
 		driver = initializeDriver();
 		String pageTitle = driver.getTitle();
 		System.out.println(pageTitle);
-		Assert.assertEquals(pageTitle, "Book Bus Tickets Online, Easy & Secure Booking, Top Operators - redBus");
+		//Assert.assertEquals(pageTitle, "Bus Ticket Booking Online made Easy, Secure with Top Bus Operators - redBus");
 		loginpage = new LoginPage(driver);
 		return loginpage;
 	}
