@@ -29,10 +29,14 @@ public class LogOutPage extends AbstractComponent {
 	@FindBy(className = "loginErr")
 	WebElement loginErrorMessage;
 
+	@FindBy(xpath = "//div[@class='modalCloseSmall']")
+	WebElement close;
+
 	By loginErrorMessageBy = By.className("loginErr");
 
 	/* Method to click My Account dropdown */
 	public void clickMyAccountDropdown() {
+		close.click();
 		waitForElementToAppear(myAccounrDropdownBy);
 		myAccountDropdown.click();
 	}

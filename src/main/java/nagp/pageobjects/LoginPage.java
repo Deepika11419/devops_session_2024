@@ -114,8 +114,6 @@ public class LoginPage extends AbstractComponent {
 		actions.sendKeys(Keys.RETURN).perform();
 		driver.switchTo().window(mainWindowHandle);
 		Thread.sleep(2000);
-		close.click();
-		Thread.sleep(2000);
 		RedBusLandingPage redbusLandingPage = new RedBusLandingPage(driver);
 		MyTrips myTrips = new MyTrips(driver);
 		LogOutPage logOutPage = new LogOutPage(driver);
