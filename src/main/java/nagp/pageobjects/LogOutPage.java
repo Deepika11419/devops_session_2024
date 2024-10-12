@@ -36,8 +36,9 @@ public class LogOutPage extends AbstractComponent {
 
 	/* Method to click My Account dropdown */
 	public void clickMyAccountDropdown() throws InterruptedException{
-		Thread.sleep(2000);
+		Thread.sleep(30000);
 		close.click();
+		Thread.sleep(10000);
 		waitForElementToAppear(myAccounrDropdownBy);
 		myAccountDropdown.click();
 	}
