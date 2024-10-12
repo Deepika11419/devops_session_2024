@@ -14,17 +14,15 @@ node {
         stage('Build') {
             // Build the project using Maven
             echo 'Building the project...'
-            sh "${MAVEN_HOME}/bin/mvn clean install -DskipTests" // Skip tests during build
+            bat "${MAVEN_HOME}\\bin\\mvn clean install -DskipTests"
         }
 
         stage('Test') {
             // Run tests using Maven and TestNG
             echo 'Running tests...'
-            sh "${MAVEN_HOME}/bin/mvn test" // Run TestNG tests
+            bat "${MAVEN_HOME}\\bin\\mvn test"
 
-            // Archive TestNG results
-            echo 'Publishing TestNG results...'
-            publishTestNGReport testResultsPattern: '**/target/testng-results.xml', escapeTestDescp: true, escapeExceptionMsg: true
+    
         }
       stage('Publish TestNG Results') {
             // Publish TestNG test results to Jenkins
