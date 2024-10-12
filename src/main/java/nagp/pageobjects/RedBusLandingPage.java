@@ -59,7 +59,7 @@ public class RedBusLandingPage extends AbstractComponent {
 	@FindBy(xpath = "//div[@class='modalCloseSmall']")
 	WebElement close;
 
-	public String getMyAccountText() {
+	public String getMyAccountText() throws InterruptedException {
 		Thread.sleep(1000);
 		close.click();
 		waitForElementToClickable(myaccoundDropdownBy);

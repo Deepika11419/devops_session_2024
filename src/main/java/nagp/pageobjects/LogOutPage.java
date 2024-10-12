@@ -35,7 +35,8 @@ public class LogOutPage extends AbstractComponent {
 	By loginErrorMessageBy = By.className("loginErr");
 
 	/* Method to click My Account dropdown */
-	public void clickMyAccountDropdown() {
+	public void clickMyAccountDropdown() throws InterruptedException{
+		Thread.sleep(2000);
 		close.click();
 		waitForElementToAppear(myAccounrDropdownBy);
 		myAccountDropdown.click();
