@@ -18,13 +18,13 @@ node {
         stage('Test') {
             // Run TestNG tests using Maven
             echo 'Running TestNG tests...'
-            bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean install -DskipTests'
+            bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test -DskipTests'
         }
 
         stage('Publish TestNG Results') {
             // Publish the TestNG test results
             echo 'Publishing TestNG test results...'
-            testng '**/target/surefire-reports/*.xml'
+          junit '**/test-output/Suite/testng-results.xml'
         }
         
     } catch (Exception e) {
