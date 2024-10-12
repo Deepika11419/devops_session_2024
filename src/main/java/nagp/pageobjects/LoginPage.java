@@ -40,6 +40,9 @@ public class LoginPage extends AbstractComponent {
 	@FindBy(xpath = "//iframe[@class='modalIframe']")
 	WebElement iframeP;
 
+	@FindBy(xpath = "//div[@class='modalCloseSmall']")
+	WebElement close;
+
 	@FindBy(xpath = "//iframe[@title='Sign in with Google Button']")
 	WebElement iframeS;
 
@@ -110,6 +113,9 @@ public class LoginPage extends AbstractComponent {
 		passwordField.sendKeys(password);
 		actions.sendKeys(Keys.RETURN).perform();
 		driver.switchTo().window(mainWindowHandle);
+		Thread.sleep(2000);
+		close.click();
+		Thread.sleep(2000);
 		RedBusLandingPage redbusLandingPage = new RedBusLandingPage(driver);
 		MyTrips myTrips = new MyTrips(driver);
 		LogOutPage logOutPage = new LogOutPage(driver);
