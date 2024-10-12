@@ -24,7 +24,7 @@ node {
         stage('Publish TestNG Results') {
             // Publish the TestNG test results
             echo 'Publishing TestNG test results...'
-            publishTestNGResults pattern: '**/target/surefire-reports/testng-results.xml'
+            testng '**/target/surefire-reports/*.xml'
         }
         
     } catch (Exception e) {
