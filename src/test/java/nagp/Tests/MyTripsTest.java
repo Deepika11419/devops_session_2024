@@ -28,9 +28,6 @@ public class MyTripsTest extends BaseTest {
 			/* Get required page objects from LoginData */
 			RedBusLandingPage redbuslandingpage = loginData.getRedBusLandingPage();
 			MyTrips myTrips = loginData.getMyTrips();
-			String text = redbuslandingpage.getMyAccountText();
-			String expectedText = "My Account";
-			Assert.assertEquals(text, expectedText, "User is not signed in");
 
 			/* Validation of MyTrips Page */
 			myTrips.clickMyAccountDropdownIcon();

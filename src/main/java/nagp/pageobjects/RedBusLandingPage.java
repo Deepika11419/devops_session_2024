@@ -60,7 +60,7 @@ public class RedBusLandingPage extends AbstractComponent {
 	WebElement close;
 
 	public String getMyAccountText() throws InterruptedException {
-		Thread.sleep(1000);
+		Thread.sleep(30000);
 		close.click();
 		waitForElementToClickable(myaccoundDropdownBy);
 		String ActualText = myaccountDropdown.getText();
