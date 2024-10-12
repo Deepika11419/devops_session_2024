@@ -1,7 +1,7 @@
 node {
     // Environment variables
-    def MAVEN_HOME = 'C:\Program Files\apache-maven-3.9.7' // Adjust to your Maven configuration in Jenkins
-    def JAVA_HOME = 'C:\Program Files\Java\jdk-17' // Adjust to your JDK configuration in Jenkins
+    def MAVEN_HOME = 'C:/Program Files/apache-maven-3.9.7' // Adjust to your Maven configuration in Jenkins
+    def JAVA_HOME = 'C:/Program Files/Java/jdk-17' // Adjust to your JDK configuration in Jenkins
     //def SONARQUBE_SERVER = 'http://your-sonarqube-server' // Define your SonarQube server URL
     //def SONARQUBE_TOKEN = credentials('your-sonarqube-token') // Jenkins credentials for SonarQube token
 
