@@ -20,7 +20,7 @@ public class LogOutTest extends BaseTest {
 		/* Click on the "Sign Out" button */
 
 		try {
-			LoginData loginData = loginpage.loginApplication("seleniumtesting840", "testing@11");
+			LoginData loginData = loginpage.loginApplication("nagptesting", "testing@12");
 			LogOutPage logOutPage = loginData.getLogOutPage();
 
 			logOutPage.clickMyAccountDropdown();

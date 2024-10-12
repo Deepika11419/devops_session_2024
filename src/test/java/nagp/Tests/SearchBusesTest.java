@@ -21,7 +21,7 @@ public class SearchBusesTest extends BaseTest {
 		try {
 
 			/* Login into Application */
-			LoginData loginData = loginpage.loginApplication("seleniumtesting840", "testing@11");
+			LoginData loginData = loginpage.loginApplication("nagptesting", "testing@12");
 			RedBusLandingPage redbuslandingpage = loginData.getRedBusLandingPage();
 			String text = redbuslandingpage.getMyAccountText();
 			String expectedText = "My Account";

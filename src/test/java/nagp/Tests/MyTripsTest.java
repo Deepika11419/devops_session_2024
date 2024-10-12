@@ -23,7 +23,7 @@ public class MyTripsTest extends BaseTest {
 
 		try {
 			/* Perform login */
-			LoginData loginData = loginpage.loginApplication("seleniumtesting840", "testing@11");
+			LoginData loginData = loginpage.loginApplication("nagptesting", "testing@12");
 
 			/* Get required page objects from LoginData */
 			RedBusLandingPage redbuslandingpage = loginData.getRedBusLandingPage();
