@@ -21,10 +21,9 @@ public class MyTrips extends AbstractComponent {
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(css = "i.icon.icon-down.icon_secondary_item_more")
-	WebElement myaccountDropdownicon;
-
-	By myaccountDropdowniconBy = By.cssSelector("i.icon.icon-down.icon_secondary_item_more");
+	@FindBy(xpath = "//span[text()='My Account']")
+	WebElement myAccountDropdown;
+	By myAccounrDropdownBy = By.xpath("//span[text()='My Account']");
 
 	@FindBy(xpath = "//span[text()='My Trips']")
 	WebElement myTrips;
@@ -48,8 +47,8 @@ public class MyTrips extends AbstractComponent {
 	public void clickMyAccountDropdownIcon()  throws InterruptedException {
 		Thread.sleep(30000);
 		close.click();
-		waitForElementToClickable(myaccountDropdowniconBy);
-		myaccountDropdownicon.click();
+		waitForElementToClickable(myAccounrDropdownBy);
+		myAccountDropdown.click();
 	}
 
 	/* Method to click on My Trips */

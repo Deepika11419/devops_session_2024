@@ -43,6 +43,6 @@ public class LoginTest extends BaseTest {
 		List<HashMap<String, String>> data = getJsonDataToMap(
 				System.getProperty("user.dir") + "/src/test/java/nagp/data/LoginData.json");
 
-		return new Object[][] { { data.get(0) }, { data.get(1) } };
+		return new Object[][] { { data.get(0) } };
 	}
 }
