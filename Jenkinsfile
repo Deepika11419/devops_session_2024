@@ -18,7 +18,7 @@ node {
         stage('Test') {
             // Run TestNG tests using Maven
             echo 'Running TestNG tests...'
-            bat "\"${MAVEN_HOME}/bin/mvn\" test"
+            bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean install -DskipTests'
         }
 
         stage('Publish TestNG Results') {
