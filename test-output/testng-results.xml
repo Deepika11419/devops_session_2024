@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="1" total="12" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-21T16:18:14 IST" name="Suite" finished-at="2024-04-21T16:28:11 IST" duration-ms="597029">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="LoginTest.errorValidationLogin()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" name="errorValidationLogin" class="nagp.Tests.LoginTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="MultipleData">
+        <method signature="LoginTest.loginApplication(java.util.HashMap)[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" name="loginApplication" class="nagp.Tests.LoginTest"/>
+      </group> <!-- MultipleData -->
+    </groups>
+    <test started-at="2024-04-21T16:18:14 IST" name="Login of application validation" finished-at="2024-04-21T16:22:10 IST" duration-ms="236617">
+      <class name="nagp.Tests.LoginTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:18:14 IST" name="launchApplication" finished-at="2024-04-21T16:19:20 IST" duration-ms="66481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="errorValidationLogin()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:19:20 IST" name="errorValidationLogin" finished-at="2024-04-21T16:19:46 IST" duration-ms="26262" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Wrong Error message is displayed expected [password. Try again or click Forgot password to reset it.] but found [Wrong password. Try again or click Forgot password to reset it.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Wrong Error message is displayed expected [password. Try again or click Forgot password to reset it.] but found [Wrong password. Try again or click Forgot password to reset it.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at nagp.Tests.LoginTest.errorValidationLogin(LoginTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidationLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:19:47 IST" name="tearDown" finished-at="2024-04-21T16:19:50 IST" duration-ms="3008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:19:50 IST" name="launchApplication" finished-at="2024-04-21T16:20:15 IST" duration-ms="25507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="errorValidationLogin()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:20:15 IST" name="errorValidationLogin" finished-at="2024-04-21T16:20:28 IST" duration-ms="13265" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Wrong Error message is displayed expected [password. Try again or click Forgot password to reset it.] but found [Wrong password. Try again or click Forgot password to reset it.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Wrong Error message is displayed expected [password. Try again or click Forgot password to reset it.] but found [Wrong password. Try again or click Forgot password to reset it.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at nagp.Tests.LoginTest.errorValidationLogin(LoginTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:249)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidationLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:20:29 IST" name="tearDown" finished-at="2024-04-21T16:20:31 IST" duration-ms="1432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:20:32 IST" name="launchApplication" finished-at="2024-04-21T16:20:46 IST" duration-ms="14894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginApplication(java.util.HashMap)[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:20:46 IST" name="loginApplication" data-provider="getData" finished-at="2024-04-21T16:21:12 IST" duration-ms="25579" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=testing@11, email=seleniumtesting840}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:21:12 IST" name="tearDown" finished-at="2024-04-21T16:21:14 IST" duration-ms="1545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:21:14 IST" name="launchApplication" finished-at="2024-04-21T16:21:34 IST" duration-ms="20525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginApplication(java.util.HashMap)[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:21:34 IST" name="loginApplication" data-provider="getData" finished-at="2024-04-21T16:22:09 IST" duration-ms="35349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=testing@12, email=nagptesting}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.LoginTest@26f143ed]" started-at="2024-04-21T16:22:09 IST" name="tearDown" finished-at="2024-04-21T16:22:10 IST" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nagp.Tests.LoginTest -->
+    </test> <!-- Login of application validation -->
+    <test started-at="2024-04-21T16:22:11 IST" name="Search Buses Functionality" finished-at="2024-04-21T16:22:57 IST" duration-ms="45992">
+      <class name="nagp.Tests.SearchBusesTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.SearchBusesTest@5dda14d0]" started-at="2024-04-21T16:22:11 IST" name="launchApplication" finished-at="2024-04-21T16:22:24 IST" duration-ms="12771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="searchBuses()[pri:0, instance:nagp.Tests.SearchBusesTest@5dda14d0]" started-at="2024-04-21T16:22:24 IST" name="searchBuses" finished-at="2024-04-21T16:22:56 IST" duration-ms="32223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBuses -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.SearchBusesTest@5dda14d0]" started-at="2024-04-21T16:22:56 IST" name="tearDown" finished-at="2024-04-21T16:22:57 IST" duration-ms="991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nagp.Tests.SearchBusesTest -->
+    </test> <!-- Search Buses Functionality -->
+    <test started-at="2024-04-21T16:22:57 IST" name="Display RSRTC Buses" finished-at="2024-04-21T16:23:44 IST" duration-ms="46650">
+      <class name="nagp.Tests.DisplayRSRTCBusesTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.DisplayRSRTCBusesTest@3b4ef7]" started-at="2024-04-21T16:22:57 IST" name="launchApplication" finished-at="2024-04-21T16:23:08 IST" duration-ms="10424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="DisplayRSRTC()[pri:0, instance:nagp.Tests.DisplayRSRTCBusesTest@3b4ef7]" started-at="2024-04-21T16:23:08 IST" name="DisplayRSRTC" finished-at="2024-04-21T16:23:43 IST" duration-ms="35446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DisplayRSRTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.DisplayRSRTCBusesTest@3b4ef7]" started-at="2024-04-21T16:23:43 IST" name="tearDown" finished-at="2024-04-21T16:23:44 IST" duration-ms="765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nagp.Tests.DisplayRSRTCBusesTest -->
+    </test> <!-- Display RSRTC Buses -->
+    <test started-at="2024-04-21T16:23:44 IST" name="Seat Booking Functionality" finished-at="2024-04-21T16:24:40 IST" duration-ms="55714">
+      <class name="nagp.Tests.SeatBookingTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.SeatBookingTest@25230246]" started-at="2024-04-21T16:23:44 IST" name="launchApplication" finished-at="2024-04-21T16:23:59 IST" duration-ms="14398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="seatBooking()[pri:0, instance:nagp.Tests.SeatBookingTest@25230246]" started-at="2024-04-21T16:23:59 IST" name="seatBooking" finished-at="2024-04-21T16:24:39 IST" duration-ms="40579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seatBooking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.SeatBookingTest@25230246]" started-at="2024-04-21T16:24:39 IST" name="tearDown" finished-at="2024-04-21T16:24:40 IST" duration-ms="731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nagp.Tests.SeatBookingTest -->
+    </test> <!-- Seat Booking Functionality -->
+    <test started-at="2024-04-21T16:24:40 IST" name="Enter Passenger Details" finished-at="2024-04-21T16:25:38 IST" duration-ms="57672">
+      <class name="nagp.Tests.PassengerDetailsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.PassengerDetailsTest@17f9344b]" started-at="2024-04-21T16:24:40 IST" name="launchApplication" finished-at="2024-04-21T16:24:52 IST" duration-ms="11958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="passengerDetails()[pri:0, instance:nagp.Tests.PassengerDetailsTest@17f9344b]" started-at="2024-04-21T16:24:52 IST" name="passengerDetails" finished-at="2024-04-21T16:25:37 IST" duration-ms="45086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passengerDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.PassengerDetailsTest@17f9344b]" started-at="2024-04-21T16:25:37 IST" name="tearDown" finished-at="2024-04-21T16:25:38 IST" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nagp.Tests.PassengerDetailsTest -->
+    </test> <!-- Enter Passenger Details -->
+    <test started-at="2024-04-21T16:25:38 IST" name="Payment page validation" finished-at="2024-04-21T16:26:53 IST" duration-ms="74809">
+      <class name="nagp.Tests.PaymentPageTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.PaymentPageTest@50cf5a23]" started-at="2024-04-21T16:25:38 IST" name="launchApplication" finished-at="2024-04-21T16:25:51 IST" duration-ms="13146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="PaymentPage()[pri:0, instance:nagp.Tests.PaymentPageTest@50cf5a23]" started-at="2024-04-21T16:25:51 IST" name="PaymentPage" finished-at="2024-04-21T16:26:52 IST" duration-ms="61068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PaymentPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.PaymentPageTest@50cf5a23]" started-at="2024-04-21T16:26:52 IST" name="tearDown" finished-at="2024-04-21T16:26:53 IST" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nagp.Tests.PaymentPageTest -->
+    </test> <!-- Payment page validation -->
+    <test started-at="2024-04-21T16:26:53 IST" name="My trips page validation" finished-at="2024-04-21T16:27:35 IST" duration-ms="42271">
+      <class name="nagp.Tests.MyTripsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.MyTripsTest@2899a8db]" started-at="2024-04-21T16:26:53 IST" name="launchApplication" finished-at="2024-04-21T16:27:09 IST" duration-ms="16035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="myTripsTest()[pri:0, instance:nagp.Tests.MyTripsTest@2899a8db]" started-at="2024-04-21T16:27:09 IST" name="myTripsTest" finished-at="2024-04-21T16:27:34 IST" duration-ms="25631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myTripsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.MyTripsTest@2899a8db]" started-at="2024-04-21T16:27:34 IST" name="tearDown" finished-at="2024-04-21T16:27:35 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nagp.Tests.MyTripsTest -->
+    </test> <!-- My trips page validation -->
+    <test started-at="2024-04-21T16:27:35 IST" name="Logout functionality validation" finished-at="2024-04-21T16:28:11 IST" duration-ms="35474">
+      <class name="nagp.Tests.LogOutTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nagp.Tests.LogOutTest@2237bada]" started-at="2024-04-21T16:27:35 IST" name="launchApplication" finished-at="2024-04-21T16:27:45 IST" duration-ms="9481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="logout()[pri:0, instance:nagp.Tests.LogOutTest@2237bada]" started-at="2024-04-21T16:27:45 IST" name="logout" finished-at="2024-04-21T16:28:10 IST" duration-ms="25313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nagp.Tests.LogOutTest@2237bada]" started-at="2024-04-21T16:28:10 IST" name="tearDown" finished-at="2024-04-21T16:28:11 IST" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nagp.Tests.LogOutTest -->
+    </test> <!-- Logout functionality validation -->
+  </suite> <!-- Suite -->
+</testng-results>

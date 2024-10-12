@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="nagp.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="2" name="Login of application validation(failed)">
+    <classes>
+      <class name="nagp.Tests.LoginTest">
+        <methods>
+          <include name="errorValidationLogin"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- nagp.Tests.LoginTest -->
+    </classes>
+  </test> <!-- Login of application validation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

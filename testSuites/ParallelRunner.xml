@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="2" name="Login of application validation" parallel="methods">
+		<classes>
+			<class name="nagp.Tests.LoginTest" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Search Buses Functionality" parallel="methods">
+		<classes>
+			<class name="nagp.Tests.SearchBusesTest" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Display RSRTC Buses" parallel="methods">
+		<classes>
+			<class name="nagp.Tests.DisplayRSRTCBusesTest" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Seat Booking Functionality" parallel="methods">
+		<classes>
+			<class name="nagp.Tests.SeatBookingTest" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Enter Passenger Details" parallel="methods">
+		<classes>
+			<class name="nagp.Tests.PassengerDetailsTest" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Payment page validation" parallel="methods">
+		<classes>
+			<class name="nagp.Tests.PaymentPageTest" />
+		</classes>
+	</test>
+	<test thread-count="2" name="My trips page validation" parallel="methods">
+		<classes>
+			<class name="nagp.Tests.MyTripsTest" />
+		</classes>
+	</test>
+	<test thread-count="2" name="Logout functionality validation" parallel="methods">
+		<classes>
+			<class name="nagp.Tests.LogOutTest" />
+		</classes>
+	</test>
+</suite> <!--Suite -->
