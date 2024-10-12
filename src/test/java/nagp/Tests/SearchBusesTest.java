@@ -21,7 +21,8 @@ public class SearchBusesTest extends BaseTest {
 		try {
 
 			/* Login into Application */
-			LoginData loginData = loginpage.loginApplication("nagptesting", "testing@12");
+			LoginData loginData = loginpage.loginApplication("deepika91597@gmail.com", "Nav#ya@12345");
+
 			RedBusLandingPage redbuslandingpage = loginData.getRedBusLandingPage();
 			String text = redbuslandingpage.getMyAccountText();
 			String expectedText = "My Account";
@@ -29,7 +30,7 @@ public class SearchBusesTest extends BaseTest {
 			/* Search for the Buses */
 			redbuslandingpage.selectSourceDestination();
 			redbuslandingpage.datePicker("May 2024", "4");
-			SearchedBusesLandingPage searchedbuseslandingpage = redbuslandingpage.searchBus();
+			SearchedBusesLandingPage searchedbuseslandingpagae = redbuslandingpage.searchBus();
 			String pageTitleofBus = searchedbuseslandingpage.validateDelhiToChandigarhpage();
 			System.out.println(pageTitleofBus);
 			Assert.assertTrue(pageTitleofBus.contains("Delhi to Chandigarh"), "Results Mismatch");
