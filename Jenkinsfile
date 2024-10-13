@@ -20,19 +20,8 @@ node {
             echo 'Running TestNG tests...'
             bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test -PWholeSuite'
         }
-
-   stage('Check TestNG Results') {
-        script {
-            def resultsFile = 'C:\\Users\\Sachin\\.jenkins\\workspace\\Pipeline_NAGP\\test-output\\testng-results.xml'
-            if (fileExists(resultsFile)) {
-                echo "TestNG results file exists."
-            } else {
-                error "TestNG results file does not exist."
-            }
-        }
-    }
-    stage('Publish TestNG Results') {
-        junit 'C:\\Users\\Sachin\\.jenkins\\workspace\\Pipeline_NAGP\\test-output\\testng-results.xml'
+        stage('Publish TestNG Results') {
+        junit 'target/surefire-reports/testng-results.xml' // Adjust the path as needed
     }
         
     } catch (Exception e) {
