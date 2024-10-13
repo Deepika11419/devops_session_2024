@@ -26,11 +26,10 @@ node {
             echo 'Listing test-output directory...'
             bat "dir ${WORKSPACE}\\test-output"
         }
-         stage('Publish TestNG Results') {
+      stage('Publish TestNG Results') {
             echo 'Publishing TestNG test results...'
-            
-            // Publish TestNG results
-            step([$class: 'TestNGPublisher', testNGResults: [[reportDir: "${WORKSPACE}\\test-output", reportFiles: 'testng-results.xml']]])
+            // Use this step for publishing TestNG results
+            testng(testResults: '**/testng-results.xml')
         }
         
     } catch (Exception e) {
