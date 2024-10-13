@@ -21,9 +21,18 @@ node {
             bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test -PWholeSuite'
         }
 
-     stage('Publish TestNG Results') {
-        // Ensure the testng-results.xml path is correct
-        step([$class: 'TestNGPublisher', testNGResults: [[reportDir: 'test-output', reportFiles: 'testng-results.xml']]])
+   stage('Check TestNG Results') {
+        script {
+            def resultsFile = 'C:\\Users\\Sachin\\.jenkins\\workspace\\Pipeline_NAGP\\test-output\\testng-results.xml'
+            if (fileExists(resultsFile)) {
+                echo "TestNG results file exists."
+            } else {
+                error "TestNG results file does not exist."
+            }
+        }
+    }
+    stage('Publish TestNG Results') {
+        junit 'C:\\Users\\Sachin\\.jenkins\\workspace\\Pipeline_NAGP\\test-output\\testng-results.xml'
     }
         
     } catch (Exception e) {
