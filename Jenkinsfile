@@ -21,16 +21,10 @@ node {
             bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test -PWholeSuite'
         }
 
-        stage('List Test Output') {
-            // List the contents of the test-output folder with backslashes
-            echo 'Listing test-output directory...'
-            bat "dir ${WORKSPACE}\\test-output"
-        }
-      stage('Publish TestNG Results') {
-            echo 'Publishing TestNG test results...'
-            // Use this step for publishing TestNG results
-            testng(testResults: '**/testng-results.xml')
-        }
+     stage('Publish TestNG Results') {
+        // Ensure the testng-results.xml path is correct
+        step([$class: 'TestNGPublisher', testNGResults: [[reportDir: 'test-output', reportFiles: 'testng-results.xml']]])
+    }
         
     } catch (Exception e) {
         // Handle any exceptions
