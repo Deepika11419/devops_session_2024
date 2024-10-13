@@ -26,16 +26,11 @@ node {
             echo 'Listing test-output directory...'
             bat "dir ${WORKSPACE}\\test-output"
         }
-
-      stage('Publish TestNG Results') {
+         stage('Publish TestNG Results') {
             echo 'Publishing TestNG test results...'
             
-            // Check if the testng-results.xml file exists
-            if (fileExists("${WORKSPACE}\\test-output\\testng-results.xml")) {
-                junit "${WORKSPACE}\\test-output\\testng-results.xml"
-            } else {
-                error "TestNG results file not found at ${WORKSPACE}\\test-output\\testng-results.xml"
-            }
+            // Publish TestNG results
+            step([$class: 'TestNGPublisher', testNGResults: [[reportDir: "${WORKSPACE}\\test-output", reportFiles: 'testng-results.xml']]])
         }
         
     } catch (Exception e) {
