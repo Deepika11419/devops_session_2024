@@ -24,7 +24,7 @@ node {
         stage('Publish TestNG Results') {
             // Publish the TestNG test results
             echo 'Publishing TestNG test results...'
-           junit '**/test-output/testng-results.xml'
+          junit "${WORKSPACE}/test-output/testng-results.xml"
         }
         
     } catch (Exception e) {
