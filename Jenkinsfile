@@ -21,10 +21,15 @@ node {
             bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test -PWholeSuite'
         }
 
+       stage('List Test Output') {
+            // List the contents of the test-output folder
+            echo 'Listing test-output directory...'
+            bat "dir ${WORKSPACE}/test-output"
+        }
+
         stage('Publish TestNG Results') {
-            // Publish the TestNG test results
             echo 'Publishing TestNG test results...'
-          junit "${WORKSPACE}/test-output/testng-results.xml"
+            junit "${WORKSPACE}/test-output/testng-results.xml"
         }
         
     } catch (Exception e) {
