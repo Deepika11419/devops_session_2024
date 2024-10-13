@@ -20,9 +20,14 @@ node {
             echo 'Running TestNG tests...'
             bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test -PWholeSuite'
         }
+        
+        stage('List Report Files') {
+        bat 'dir target\\surefire-reports'
+        }
+        
         stage('Publish TestNG Results') {
-        junit 'target/surefire-reports/testng-results.xml' // Adjust the path as needed
-    }
+        junit '**/surefire-reports/*.xml' // Ensure this matches your actual report path
+        }
         
     } catch (Exception e) {
         // Handle any exceptions
