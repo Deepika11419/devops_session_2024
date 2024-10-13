@@ -21,10 +21,6 @@ node {
             bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test -PWholeSuite'
         }
         
-        stage('List Report Files') {
-        bat 'dir target\\surefire-reports'
-        }
-        
         stage('Publish TestNG Results') {
         junit '**/surefire-reports/*.xml' // Ensure this matches your actual report path
         }
