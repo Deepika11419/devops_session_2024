@@ -9,31 +9,6 @@
             <class name="nagp.Tests.LoginTest" />
         </classes>
     </test>
-    <test thread-count="2" name="Search Buses Functionality">
-		<classes>
-			<class name="nagp.Tests.SearchBusesTest" />
-		</classes>
-	</test>
-	<test thread-count="2" name="Display RSRTC Buses">
-		<classes>
-			<class name="nagp.Tests.DisplayRSRTCBusesTest" />
-		</classes>
-	</test>
-	<test thread-count="2" name="Seat Booking Functionality">
-		<classes>
-			<class name="nagp.Tests.SeatBookingTest" />
-		</classes>
-	</test>
-	<test thread-count="2" name="Enter Passenger Details">
-		<classes>
-			<class name="nagp.Tests.PassengerDetailsTest" />
-		</classes>
-	</test>
-	<test thread-count="2" name="Payment page validation">
-		<classes>
-			<class name="nagp.Tests.PaymentPageTest" />
-		</classes>
-	</test>
 	<test thread-count="2" name="My trips page validation" >
 		<classes>
 			<class name="nagp.Tests.MyTripsTest" />

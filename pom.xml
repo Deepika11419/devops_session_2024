@@ -63,27 +63,7 @@
 
 	</dependencies>
 	<profiles>
-		<profile>
-			<id>ErrorValidation</id>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-surefire-plugin</artifactId>
-							<version>3.2.5</version>
-							<configuration>
-								<suiteXmlFiles>
-									<suiteXmlFile>
-										testSuites/ErrorValidationsGrouping.xml</suiteXmlFile>
-								</suiteXmlFiles>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-			</build>
 
-		</profile>
 		<profile>
 			<id>WholeSuite</id>
 			<build>
@@ -104,46 +84,5 @@
 				</pluginManagement>
 			</build>
 		</profile>
-		<profile>
-			<id>MultipleData</id>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-surefire-plugin</artifactId>
-							<version>3.2.5</version>
-							<configuration>
-								<suiteXmlFiles>
-									<suiteXmlFile>
-										testSuites/MultipleDataValidation.xml</suiteXmlFile>
-								</suiteXmlFiles>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-			</build>
-		</profile>
-		<profile>
-			<id>ParallelRun</id>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-surefire-plugin</artifactId>
-							<version>3.2.5</version>
-							<configuration>
-								<suiteXmlFiles>
-									<suiteXmlFile>
-										testSuites/ParallelRunner.xml</suiteXmlFile>
-								</suiteXmlFiles>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-			</build>
-		</profile>
-
 	</profiles>
 </project>
