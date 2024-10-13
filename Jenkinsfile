@@ -18,13 +18,13 @@ node {
         stage('Test') {
             // Run TestNG tests using Maven
             echo 'Running TestNG tests...'
-            bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test -DskipTests'
+            bat '"C:/Program Files/apache-maven-3.9.7/bin/mvn" clean test'
         }
 
         stage('Publish TestNG Results') {
             // Publish the TestNG test results
             echo 'Publishing TestNG test results...'
-          junit '**/test-output/Suite/testng-results.xml'
+           junit '**/test-output/testng-results.xml'
         }
         
     } catch (Exception e) {
