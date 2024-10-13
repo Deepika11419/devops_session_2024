@@ -29,9 +29,8 @@ public class Listeners extends BaseTest implements ITestListener {
 	public void onFinish(ITestContext context) {
 		System.out.println("Test suite finished: " + context.getName());
 		extent.flush(); /* Flush the Extent Reports object to write the information to the report */
-		moveResultsToCurrentTestResultsFolder(
-				copiedFilePath); /* call the method to move the results to Current Test Results Folder */
-		cleanCurrentTestResultsFolder();
+		//moveResultsToCurrentTestResultsFolder( copiedFilePath); /* call the method to move the results to Current Test Results Folder */
+		//cleanCurrentTestResultsFolder();
 	}
 
 	@Override
