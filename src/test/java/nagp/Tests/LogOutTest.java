@@ -20,7 +20,7 @@ public class LogOutTest extends BaseTest {
 		/* Click on the "Sign Out" button */
 
 		try {
-			LoginData loginData = loginpage.loginApplication("kaushideepika@gmail.com", "Nav#ya@12345");
+			LoginData loginData = loginpage.loginApplication("deepika.k7222@gmail.com", "Nav#ya@12345");
 			LogOutPage logOutPage = loginData.getLogOutPage();
 
 			logOutPage.clickMyAccountDropdown();

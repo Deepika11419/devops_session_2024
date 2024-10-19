@@ -23,7 +23,7 @@ public class MyTripsTest extends BaseTest {
 
 		try {
 			/* Perform login */
-			LoginData loginData = loginpage.loginApplication("kaushideepika@gmail.com", "Nav#ya@12345");
+			LoginData loginData = loginpage.loginApplication("deepika.k7222@gmail.com", "Nav#ya@12345");
 
 			/* Get required page objects from LoginData */
 			RedBusLandingPage redbuslandingpage = loginData.getRedBusLandingPage();
