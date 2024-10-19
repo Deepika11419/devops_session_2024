@@ -38,15 +38,12 @@ public class MyTrips extends AbstractComponent {
 	@FindBy(id = "uperrMsg2")
 	WebElement uperrMsg2;
 
-	@FindBy(xpath = "//div[@class='modalCloseSmall']")
-	WebElement close;
+
 
 	By upperMsg2By = By.id("uperrMsg2");
 
 	/* Method to click on My Account dropdown icon */
 	public void clickMyAccountDropdownIcon()  throws InterruptedException {
-		Thread.sleep(30000);
-		close.click();
 		waitForElementToClickable(myAccounrDropdownBy);
 		myAccountDropdown.click();
 	}

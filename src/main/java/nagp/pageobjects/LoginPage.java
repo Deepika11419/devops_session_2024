@@ -59,6 +59,9 @@ public class LoginPage extends AbstractComponent {
 	@FindBy(name = "Passwd")
 	WebElement passwordField;
 
+	@FindBy(xpath = "//div[@class='modalCloseSmall']")
+	WebElement close;
+
 	By passwordFieldBy = By.name("Passwd");
 
 	@FindBy(xpath = "//span[text()='Wrong password. Try again or click Forgot password to reset it.']")
@@ -89,6 +92,7 @@ public class LoginPage extends AbstractComponent {
 		driver.switchTo().defaultContent();
 		String mainWindowHandle = driver.getWindowHandle();
 
+
 		Set<String> windowHandles = driver.getWindowHandles();
 
 		for (String windowHandle : windowHandles) {
@@ -113,6 +117,9 @@ public class LoginPage extends AbstractComponent {
 		passwordField.sendKeys(password);
 		actions.sendKeys(Keys.RETURN).perform();
 		driver.switchTo().window(mainWindowHandle);
+		Thread.sleep(5000);
+		close.click();
+		Thread.sleep(5000);
 
 		RedBusLandingPage redbusLandingPage = new RedBusLandingPage(driver);
 		MyTrips myTrips = new MyTrips(driver);
