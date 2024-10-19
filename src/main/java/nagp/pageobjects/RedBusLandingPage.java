@@ -57,7 +57,13 @@ public class RedBusLandingPage extends AbstractComponent {
 	@FindBy(xpath = "//button[text()='SEARCH BUSES']")
 	WebElement searchBus;
 
-	public String getMyAccountText() {
+	@FindBy(xpath = "//div[@class='modalCloseSmall']")
+	WebElement close;
+
+	public String getMyAccountText()  throws InterruptedException {
+		Thread.sleep(5000);
+		close.click();
+		Thread.sleep(5000);
 		waitForElementToClickable(myaccoundDropdownBy);
 		String ActualText = myaccountDropdown.getText();
 		return ActualText;
