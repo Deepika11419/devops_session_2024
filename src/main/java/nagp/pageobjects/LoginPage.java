@@ -59,8 +59,6 @@ public class LoginPage extends AbstractComponent {
 	@FindBy(name = "Passwd")
 	WebElement passwordField;
 
-	@FindBy(xpath = "//div[@class='modalCloseSmall']")
-	WebElement close;
 
 	By passwordFieldBy = By.name("Passwd");
 
