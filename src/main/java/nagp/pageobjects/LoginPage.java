@@ -115,7 +115,7 @@ public class LoginPage extends AbstractComponent {
 		passwordField.sendKeys(password);
 		actions.sendKeys(Keys.RETURN).perform();
 		driver.switchTo().window(mainWindowHandle);
-		Thread.sleep(5000);
+		Thread.sleep(30000);
 		close.click();
 		Thread.sleep(5000);
 
